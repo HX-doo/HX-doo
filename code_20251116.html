@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>创意设计网站</title>
+    <style>
+        /* 全局样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "微软雅黑", sans-serif;
+        }
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        /* 顶部导航栏 */
+        .navbar {
+            background-color: #ff2e93; /* 主色调（可替换） */
+            padding: 15px 20px;
+            text-align: center;
+        }
+        .navbar h1 {
+            display: inline-block;
+            color: #000;
+            font-size: 24px;
+            margin-right: 50px;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+        .search-box {
+            float: right;
+            margin-top: 5px;
+        }
+        .search-box input {
+            padding: 5px;
+            border: none;
+            border-radius: 3px 0 0 3px;
+        }
+        .search-box button {
+            padding: 5px 10px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 0 3px 3px 0;
+            cursor: pointer;
+        }
+
+        /* 头部横幅 */
+        .banner {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        /* 内容容器 */
+        .container {
+            width: 90%;
+            margin: 30px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        /* 团队/品牌介绍 */
+        .intro-section {
+            width: 100%;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .intro-img {
+            width: 30%;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid #ff2e93;
+        }
+        .intro-text {
+            width: 70%;
+            line-height: 1.6;
+        }
+        .intro-text h2 {
+            color: #ff2e93;
+            margin-bottom: 10px;
+        }
+
+        /* 作品展示区 */
+        .works-section {
+            width: 100%;
+            margin-top: 20px;
+        }
+        .works-section h2 {
+            color: #ff2e93;
+            margin-bottom: 20px;
+        }
+        .works-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .work-card {
+            background-color: #222;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .work-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .work-card h3 {
+            color: #ff2e93;
+            margin-bottom: 5px;
+        }
+
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff2e93;
+            color: #000;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <h1>创意设计社</h1>
+        <a href="#">首页</a>
+        <a href="#">作品展示</a>
+        <a href="#">团队介绍</a>
+        <a href="#">联系我们</a>
+        <div class="search-box">
+            <input type="text" placeholder="搜索...">
+            <button>搜索</button>
+        </div>
+    </div>
+
+    <!-- 头部横幅图 -->
+    <img class="banner" src="https://via.placeholder.com/1200x300?text=创意设计网站横幅" alt="网站横幅">
+
+    <!-- 内容容器 -->
+    <div class="container">
+        <!-- 团队介绍区 -->
+        <div class="intro-section">
+            <img class="intro-img" src="https://via.placeholder.com/300x200?text=团队展示图" alt="团队图">
+            <div class="intro-text">
+                <h2>关于我们</h2>
+                <p>我们是一支专注于创意设计的团队，擅长品牌视觉、UI设计、插画等多元创作。以“打破常规，重塑美学”为理念，为客户提供独特且有感染力的设计方案。团队成员均拥有5年以上行业经验，作品曾多次获得设计类奖项，是你身边的创意伙伴~</p>
+            </div>
+        </div>
+
+        <!-- 作品展示区 -->
+        <div class="works-section">
+            <h2>代表作品</h2>
+            <div class="works-grid">
+                <div class="work-card">
+                    <img class="work-img" src="https://via.placeholder.com/400x200?text=作品1" alt="作品1">
+                    <h3>品牌VI设计</h3>
+                    <p>为某新消费品牌打造的全套视觉识别系统，包含LOGO、色彩体系、应用物料等，风格年轻活力。</p>
+                </div>
+                <div class="work-card">
+                    <img class="work-img" src="https://via.placeholder.com/400x200?text=作品2" alt="作品2">
+                    <h3>APP界面设计</h3>
+                    <p>一款生活类APP的界面重构，优化了交互逻辑与视觉层级，提升用户使用体验。</p>
+                </div>
+                <div class="work-card">
+                    <img class="work-img" src="https://via.placeholder.com/400x200?text=作品3" alt="作品3">
+                    <h3>插画系列创作</h3>
+                    <p>以“城市烟火气”为主题的插画集，用温暖的色调与细腻的线条呈现生活中的小美好。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>© 2025 创意设计社 | 小红书号：123456789</p>
+    </footer>
+</body>
+</html>
